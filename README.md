@@ -1,5 +1,5 @@
 # pyPost
-A Free to you API client modeled after Postman written in Python
+A Free to use API client modeled after Postman written in Python
 
 
 ## To-Do

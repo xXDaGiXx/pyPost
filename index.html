@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pywebview API Tester</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">API Tester</div>
+            <div class="collection-tree">
+                <!-- Your collection tree view here -->
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="request-form">
+                <input type="text" id="url" placeholder="Enter URL">
+                <div class="tabs">
+                    <button class="tab-button" data-tab="headers">Headers</button>
+                    <button class="tab-button" data-tab="params">Params</button>
+                </div>
+                <div class="tab-content" id="headers">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Key</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" placeholder="Key"></td>
+                                <td><input type="text" placeholder="Value"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="add-row">Add Records</button>
+                </div>
+                <div class="tab-content" id="params">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Key</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" placeholder="Key"></td>
+                                <td><input type="text" placeholder="Value"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="add-row">Add Param</button>
+                </div>
+                <button id="send-request">Send Request</button>
+            </div>
+            <div class="response-view">
+                <!-- This will display the response -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
